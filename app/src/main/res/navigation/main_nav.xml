@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/bookList"
-        android:name="com.ddvader44.shhhhh.BookList"
+        android:name="com.ddvader44.shhhhh.ui.fragments.BookList"
         android:label="Books"
         tools:layout="@layout/fragment_book_list" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/createReturnItem"
-        android:name="com.ddvader44.shhhhh.createReturnItem"
+        android:name="com.ddvader44.shhhhh.ui.fragments.createReturnItem"
         android:label="Create New Book Return"
         tools:layout="@layout/fragment_create_return_item" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateReturnItem"
-        android:name="com.ddvader44.shhhhh.updateReturnItem"
+        android:name="com.ddvader44.shhhhh.ui.fragments.updateReturnItem"
         android:label="Update Book Return"
         tools:layout="@layout/fragment_update_return_item" >
         <action

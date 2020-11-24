@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context=".createReturnItem">
+    tools:context=".ui.fragments.createReturnItem">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -70,7 +70,6 @@
                 android:backgroundTint="#42A5F5"
                 android:clickable="true"
                 android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
                 android:text="Pick a time"
                 android:textColor="@android:color/white" />
 
