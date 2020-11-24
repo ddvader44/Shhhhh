@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/bookList">
+
+    <fragment
+        android:id="@+id/bookList"
+        android:name="com.ddvader44.shhhhh.BookList"
+        android:label="Books"
+        tools:layout="@layout/fragment_book_list" >
+        <action
+            android:id="@+id/action_bookList_to_createReturnItem"
+            app:destination="@id/createReturnItem" />
+        <action
+            android:id="@+id/action_bookList_to_updateReturnItem"
+            app:destination="@id/updateReturnItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/createReturnItem"
+        android:name="com.ddvader44.shhhhh.createReturnItem"
+        android:label="Create New Book Return"
+        tools:layout="@layout/fragment_create_return_item" >
+        <action
+            android:id="@+id/action_createReturnItem_to_bookList"
+            app:destination="@id/bookList" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateReturnItem"
+        android:name="com.ddvader44.shhhhh.updateReturnItem"
+        android:label="Update Book Return"
+        tools:layout="@layout/fragment_update_return_item" >
+        <action
+            android:id="@+id/action_updateReturnItem_to_bookList"
+            app:destination="@id/bookList" />
+    </fragment>
+</navigation>
