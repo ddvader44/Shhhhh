@@ -34,5 +34,8 @@
         <action
             android:id="@+id/action_updateReturnItem_to_bookList"
             app:destination="@id/bookList" />
+        <argument
+            android:name="selectedBook"
+            app:argType="com.ddvader44.shhhhh.data.models.Book" />
     </fragment>
 </navigation>

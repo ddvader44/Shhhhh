@@ -46,6 +46,4 @@ class BookViewModel(application: Application) : AndroidViewModel(application) {
             repository.deleteAllBooks()
         }
     }
-
-
 }
