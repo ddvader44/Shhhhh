@@ -50,8 +50,8 @@ TimePickerDialog.OnTimeSetListener, DatePickerDialog.OnDateSetListener{
     }
 
     private fun addBookToDb() {
-       title = et_habitTitle.text.toString()
-        description = et_habitDescription.text.toString()
+       title = et_bookTitle.text.toString()
+        description = et_bookDescription.text.toString()
         timeStamp = "$cleanDate $cleanTime"
         val sdf = SimpleDateFormat("dd/MM/yyyy HH:mm")
         currentTime = sdf.format(Date())
