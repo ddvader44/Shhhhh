@@ -62,12 +62,12 @@ TimePickerDialog.OnTimeSetListener, DatePickerDialog.OnDateSetListener{
             Alerter.create(activity)
                 .setTitle("Success")
                 .setText("Book Return Scheduled successfully at $timeStamp !")
-                .setDuration(1000)
+                .setDuration(2000)
                 .setIcon(R.drawable.ic_book_alert)
                 .setIconColorFilter(0) // removes white filter
                 .setEnterAnimation(R.anim.alerter_slide_in_from_left)
                 .setExitAnimation(R.anim.alerter_slide_out_to_right)
-                .setBackgroundColorInt(Color.YELLOW)
+                .setBackgroundColorInt(Color.BLACK)
                 .show()
             findNavController().navigate(R.id.action_createReturnItem_to_bookList)
 

@@ -25,6 +25,7 @@
                 android:layout_margin="10dp"
                 android:backgroundTint="#26A69A"
                 android:hint="Book title"
+                android:textColorHint="@android:color/black"
                 android:inputType="text"
                 android:textColor="@android:color/black"
                 android:textSize="20sp" />
@@ -36,6 +37,7 @@
                 android:layout_margin="10dp"
                 android:backgroundTint="#26A69A"
                 android:hint="Give it a short description"
+                android:textColorHint="@android:color/black"
                 android:inputType="textShortMessage"
                 android:textColor="@android:color/black"
                 android:textSize="20sp" />
@@ -49,7 +51,6 @@
                 android:backgroundTint="#EF5350"
                 android:clickable="true"
                 android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
                 android:text="Pick a date"
                 android:textColor="@android:color/white" />
 
@@ -59,6 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="Date: (not selected)"
+                android:textColor="@android:color/black"
                 android:textSize="20sp" />
 
             <Button
@@ -70,7 +72,6 @@
                 android:backgroundTint="#42A5F5"
                 android:clickable="true"
                 android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
                 android:text="Pick a time"
                 android:textColor="@android:color/white" />
 
@@ -80,6 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="Time: (not selected)"
+                android:textColor="@android:color/black"
                 android:textSize="20sp" />
 
             <LinearLayout
@@ -119,7 +121,6 @@
                 android:backgroundTint="#26A69A"
                 android:clickable="true"
                 android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
                 android:text="Confirm"
                 android:textColor="@android:color/white" />
 

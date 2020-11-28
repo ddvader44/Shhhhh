@@ -13,7 +13,7 @@ object Calculations {
         val date2 = sdf.parse(endDate)
         var isNegative = false
 
-        var difference = date2.time - date1.time
+        var difference = date1.time - date2.time
 
         if(difference<0){
             difference = -(difference)

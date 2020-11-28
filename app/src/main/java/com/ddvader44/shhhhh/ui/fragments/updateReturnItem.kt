@@ -67,9 +67,8 @@ class updateReturnItem : Fragment(R.layout.fragment_update_return_item),
             Alerter.create(activity)
                 .setTitle("Success")
                 .setText("Book Return updated successfully at $timeStamp !")
-                .setDuration(1000)
+                .setDuration(2000)
                 .setIcon(R.drawable.ic_success)
-                .setIconColorFilter(0) // removes white filter
                 .setEnterAnimation(R.anim.alerter_slide_in_from_left)
                 .setExitAnimation(R.anim.alerter_slide_out_to_right)
                 .setBackgroundColorInt(Color.BLACK)
@@ -134,7 +133,6 @@ class updateReturnItem : Fragment(R.layout.fragment_update_return_item),
             .setText("Book deleted !")
             .setDuration(1000)
             .setIcon(R.drawable.ic_success)
-            .setIconColorFilter(0) // removes white filter
             .setEnterAnimation(R.anim.alerter_slide_in_from_left)
             .setExitAnimation(R.anim.alerter_slide_out_to_right)
             .setBackgroundColorInt(Color.BLACK)

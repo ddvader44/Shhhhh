@@ -36,7 +36,7 @@ class BookListAdapter : RecyclerView.Adapter<BookListAdapter.MyViewHolder>() {
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentBook = bookList[position]
         holder.itemView.tv_item_description.text = currentBook.book_description
-        holder.itemView.tv_timeElapsed.text = "Time Remaining ${Calculations.calculateTimeBetweenDates(currentBook.book_endTime)}"
+        holder.itemView.tv_timeElapsed.text = "Time Remaining :- ${Calculations.calculateTimeBetweenDates(currentBook.book_endTime)}"
         holder.itemView.tv_item_createdTimeStamp.text = "Since: ${currentBook.book_startTime}"
         holder.itemView.tv_item_title.text = "${currentBook.book_title}"
     }
