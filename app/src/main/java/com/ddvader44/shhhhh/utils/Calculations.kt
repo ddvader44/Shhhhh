@@ -1,5 +1,6 @@
 package com.ddvader44.shhhhh.utils
 
+import android.util.Log
 import java.sql.Timestamp
 import java.text.SimpleDateFormat
 import java.util.*
@@ -12,19 +13,19 @@ object Calculations {
         val date1 = sdf.parse(startDate)
         val date2 = sdf.parse(endDate)
         var isNegative = false
-
         var difference = date1.time - date2.time
-
+        Log.d("start date", date1.time.toString())
+        Log.d("end date", date2.time.toString())
         if(difference<0){
             difference = -(difference)
             isNegative = true
         }
 
         val minutes = difference / 60 / 1000
-        val hours = difference / 60 /1000 / 60
-        val days = (difference / 60 /1000 / 60)/24
-        val months = (difference / 60 /1000 / 60)/24 / (365/12)
-        val years = difference / 60 /1000 / 60/ 24 /365
+        val hours = difference / 60 / 1000 / 60
+        val days = (difference / 60 / 1000 / 60) / 24
+        val months = (difference / 60 / 1000 / 60) / 24 / (365 / 12)
+        val years = difference / 60 / 1000 / 60 / 24 / 365
 
         if(isNegative){
             return "Return your book now! You've gone past deadline!"
@@ -54,8 +55,8 @@ object Calculations {
         if(_day < 10){
             day = "0$_day"
         }
-        if(_month<9){
-            month = "0${_month+1}"
+        if(_month<10){
+            month = "0${_month}"
         }
 
         return "$day/$month/$_year"
